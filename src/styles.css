@@ -113,7 +113,7 @@ nav button{
     margin-right: 8px;
 }
 /*  */
-div.header-content form{
+form{
     position: relative;
     display: grid;
     grid-template-columns: 1fr max-content;
@@ -127,7 +127,7 @@ div.header-content input{
     background: transparent;
     opacity: 0.75;
     background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.8) 100%);
-    
+    cursor: pointer;
 }
 
 .maill input ~ span {
@@ -159,16 +159,7 @@ div.header-content input{
 }
 /*  */
 
-.email-signup button{
-    background: red;
-    border: 0;
-    outline: 0;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    padding: 15px 30px;
-    border-radius: 5px;
-}
+
 
 /* Features */
 
@@ -221,6 +212,45 @@ div.header-content input{
 .faq h2{
     font-weight: 500;
     font-size: 40px;
+}
+
+div.faq input{
+    padding: 10px;
+    font-size: 1.2rem;
+    width: 80%;
+    background: transparent;
+    opacity: 0.75;
+    background-image:linear-gradient(to top, rgba(0, 0, 0, 0.8) 100%, rgba(0, 0, 0, 0) 100%, rgba(0, 0, 0, 0.8) 100%);
+    cursor: pointer;
+}
+
+div.faq input ~ span {
+    position: absolute;
+    left: 75px;
+    top: 14px;
+    z-index: 3;
+    color: white;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+div.faq input:focus ~span{
+    top: 0.7px;
+    font-size: 0.8rem;
+}
+
+div.faq input:focus{
+    padding-top: 14px;
+    padding-bottom: 5px;
+}
+
+div.faq button{
+    font-size: 1.625rem;
+    padding: 5px 25px;
+    margin-left: -25px;
+    background-color: red;
+    color: white;
+    border-radius: 0.25rem;
 }
 
 .accordion{
@@ -428,5 +458,22 @@ input[type="radio"]{
     }
     .mysvg>svg{
         margin-top: 9px;
+        fill: white;
+    }
+
+    div.faq button{
+        margin-left: -40px;
+    }
+
+    div.faq input{
+        position: relative;
+        
+    }
+    .maill{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+    .lalal{
+        margin-left: -20px;
     }
 }
